@@ -7,13 +7,15 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = produit)
+@Table(name = "produit")
 public class Produit {
 
 	@Id
@@ -26,6 +28,7 @@ public class Produit {
 	private String lienimg;
 	private String description;
 	private boolean actif;
+	
 	
 	
 }
